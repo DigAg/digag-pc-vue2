@@ -2,6 +2,25 @@
 
 > A Vue.js project
 
+
+
+```
+大致项目结构设计
+-------------------
+assets——公共文件
+components——组件
+less——通用样式
+router——路由
+utils——通用工具/方法
+views——页面视图
+vuex——数据共享源
+-------------------
+区分视图与组件
+
+```
+
+
+
 ## Build Setup
 
 ``` bash
