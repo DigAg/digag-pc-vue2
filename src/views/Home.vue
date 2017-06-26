@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import AgNavbar from '@/components/navbar.vue'
+import AgNavbar from '@/components/navbar/navbar.vue'
 export default {
   name: 'Home',
   components: { AgNavbar }

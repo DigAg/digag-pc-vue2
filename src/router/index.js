@@ -13,7 +13,6 @@ import Type2 from '@/views/Content/Type2/Type2'
 
 const routes = [
   { path: '/', component: Home },
-  // { path: '/', component: Home },
   {
     path: '/timeline',
     component: Home,
