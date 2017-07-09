@@ -5,7 +5,8 @@ import App from './App'
 import store from './vuex/store'
 import router from './router'
 
-import '@/assets/reset.css'
+import '@/style/reset.css'
+import '@/style/common.less'
 
 Vue.config.productionTip = false
 
