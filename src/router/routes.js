@@ -3,11 +3,11 @@ import Home from '@/views/Home'
 // 404处理
 import NotFound from '@/views/404.vue'
 
-import Timeline from '@/views/Timeline'
-import Column from '@/views/Column'
-import Collect from '@/views/Collect'
-import Find from '@/views/Find'
-import Label from '@/views/Label'
+import Timeline from '@/views/Modules/Timeline'
+import Column from '@/views/Modules/Column'
+import Collect from '@/views/Modules/Collect'
+import Find from '@/views/Modules/Find'
+import Label from '@/views/Modules/Label'
 
 const routes = [
   {

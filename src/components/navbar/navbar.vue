@@ -18,8 +18,8 @@
       <span>投稿</span>
     </li>
     <li class="navbar-auth">
-      <span class="navbar-auth__login">登陆</span>
-      <span class="navbar-auth__register">注册</span>
+      <span class="navbar-auth__login" @click="handleAuth('login')">登陆</span>
+      <span class="navbar-auth__register" @click="handleAuth('register')">注册</span>
     </li>
   </div>
 </template>
@@ -42,6 +42,9 @@ export default {
     handleRouter(i, route) {
       this.isActive = i
       this.$router.push(route)
+    },
+    handleAuth(type) {
+      this.$emit('auth', type)
     }
   }
 }
@@ -80,7 +83,7 @@ export default {
     }
   }
   .navbar-search {
-    font-size: .8rem;
+    font-size: .8em;
     .navbar-search__form {
       margin-left: 72px;
       margin-top: 12px;
@@ -89,7 +92,7 @@ export default {
       display: flex;
     }
     .navbar-search__input {
-      width: 12rem;
+      width: 12em;
       border: none;
       padding: 8px 16px;
       box-shadow: none;
@@ -121,10 +124,11 @@ export default {
   .navbar-auth {
     color: #007fff;
     padding: 0 24px;
+    user-select: none;
     cursor: pointer;
     .navbar-auth__login::after {
       content: "\B7";
-      margin: 0 .4rem;
+      margin: 0 .4em;
     }
   }
 }
